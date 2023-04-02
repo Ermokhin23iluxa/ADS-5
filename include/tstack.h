@@ -4,16 +4,16 @@
 
 template<typename T, int size>
 class TStack {
-private:
+  private:
   T arr[size] = { 0 };
   int top;
 public:
-  TStack() :top(-1) {}
+  TStack() :top(-1){}
   void push(T value) {
     arr[++top] = value;
   }
   T get()const {
-  return arr[top];
+    return arr[top];
   }
   T pop() {
     return arr[top--];
